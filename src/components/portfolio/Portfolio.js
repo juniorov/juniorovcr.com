@@ -49,7 +49,8 @@ const Portfolio = () => {
         },
     ];
     const handleControl = (e) => {
-        if(e.target.localName === 'a') {
+        
+        if(e.target.localName === 'button') {
             resetFilter();
             const btns = document.querySelectorAll('.controls .filter');
             const cards = document.querySelectorAll('.mix');
@@ -68,7 +69,7 @@ const Portfolio = () => {
         }
     };
     const resetFilter = () => {
-        var cards = document.querySelectorAll('.mix');
+        const cards = document.querySelectorAll('.mix');
 
         for(let card of cards){
             card.classList.remove('d-none', 'd-block');
@@ -84,7 +85,7 @@ const Portfolio = () => {
                         <div className="controls text-center" onClick={handleControl}>
                             {
                                 filters.map((filter, index) => (
-                                    <a key={index} className={ index === 0 ? "filter btn btn-common active" : "filter btn btn-common"} data-filter={filter.key}>{filter.label}</a>
+                                    <button key={index} className={ index === 0 ? "filter btn btn-common active" : "filter btn btn-common"} data-filter={filter.key}>{filter.label}</button>
                                 ))
                             }
                         </div>
