@@ -9,7 +9,7 @@ const Contact = () => {
         e.preventDefault();
         const inputs = document.querySelectorAll('input, textarea');
 
-        Array.from(inputs).map(input => {
+        for(let input of inputs) {
             let parent = input.parentElement;
             if(input.value === "" || input.length < 0) {
                 parent.classList.add('has-error');
@@ -19,7 +19,7 @@ const Contact = () => {
             } else {
                 parent.querySelector('.with-errors').innerHTML = "";
             }
-        });
+        }
 
         emailjs.sendForm(process.env.REACT_APP_SERVICE_ID, process.env.REACT_APP_TEMPLATE_ID, form.current, process.env.REACT_APP_PUBLIC_KEY)
             .then((result) => {
