@@ -28,13 +28,11 @@
 		h3{
 			margin-top: 10px;
 			margin-bottom: 10px;
-			a{
-				font-size: 18px;
-				text-transform: uppercase;			
-    			color: #666;
-    			&:hover{
-    				color: $preset;
-    			}
+			font-size: 18px;
+			text-transform: uppercase;
+			color: #666;
+			&:hover{
+				color: $preset;
 			}
 		}
 		p{

@@ -1,4 +1,5 @@
 import About1 from "../images/about/about-1.jpg";
+import CVPdf from "../docs/CV-JuniorOV.pdf";
 
 const About = () => {
     const profile = [
@@ -52,7 +53,7 @@ const About = () => {
                                     }
                                 </ul>
                             </div>
-                            <a href="../docs/CV-JuniorOV.pdf" className="btn btn-common d-block mx-auto" download>
+                            <a href={CVPdf} className="btn btn-common d-block mx-auto" download="JuniorOV-CV.pdf">
                                 <i className="icon-paper-clip"></i> Download Resume
                             </a>
                             <a href="#contact" className="btn btn-danger d-block mx-auto"><i className="icon-speech"></i> Contact Me</a>

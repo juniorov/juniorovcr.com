@@ -2,11 +2,11 @@ import 'bootstrap/dist/js/bootstrap.bundle.js';
 import "./scss/index.scss";
 import Header from "./components/Header";
 import About from "./components/About";
-import Services from "./components/Services";
-import Resume from "./components/Resume";
-import Portfolio from "./components/Portfolio";
-import Hobbies from "./components/Hobbies";
-import Contact from "./components/Contact";
+import Services from "./components/services/Services";
+import Resume from "./components/resume/Resume";
+import Portfolio from "./components/portfolio/Portfolio";
+import Hobbies from "./components/hobbies/Hobbies";
+import Contact from "./components/contact/Contact";
 import Footer from "./components/Footer";
 import {useEffect, useState} from "react";
 

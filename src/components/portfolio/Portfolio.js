@@ -1,6 +1,4 @@
 import PortfolioCard from "./PortfolioCard";
-import mixitup from 'mixitup';
-import {useEffect} from "react";
 
 const Portfolio = () => {
     const filters = [
