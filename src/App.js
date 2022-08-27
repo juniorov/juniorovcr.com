@@ -22,7 +22,7 @@ function App() {
                 setIsHide(true);
             }
         })
-    }, [window.scrollY]);
+    }, []);
 
     const handleBackTop = (e) => {
         e.preventDefault();
