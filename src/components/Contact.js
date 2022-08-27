@@ -1,6 +1,21 @@
 import Input from "./Input";
 
 const Contact = () => {
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        const inputs = document.querySelectorAll('input, textarea');
+
+        Array.from(inputs).map(input => {
+            let parent = input.parentElement;
+            if(input.value === "" || input.length < 0) {
+                parent.classList.add('has-error');
+                parent.querySelector('.with-errors').innerHTML = input.getAttribute('data-error');
+            } else {
+                parent.querySelector('.with-errors').innerHTML = "";
+            }
+        })
+    }
+
     return (
         <section id="contact" className="section-padding">
             <div className="contact-form">
@@ -9,7 +24,7 @@ const Contact = () => {
                         <div className="col-md-6 col-lg-6 col-sm-12">
                             <div className="contact-block">
                                 <h2>Contact Form</h2>
-                                <form id="contactForm">
+                                <form id="contactForm" onSubmit={handleSubmit}>
                                     <div className="row">
                                         <Input parentClass="col-md-6" type="text" placeholder="Name" id="name" errorMessage="Please enter your name" />
                                         <Input parentClass="col-md-6" type="email" placeholder="Email" id="email" errorMessage="Please enter your email" />
@@ -19,11 +34,11 @@ const Contact = () => {
                                             <div className="form-group">
                                                 <textarea className="form-control" id="message"
                                                           placeholder="Your Message" rows="5"
-                                                          data-error="Write your message" required></textarea>
+                                                          data-error="Write your message"></textarea>
                                                 <div className="help-block with-errors"></div>
                                             </div>
                                             <div className="submit-button">
-                                                <button className="btn btn-common" id="submit" type="submit">Send
+                                                <button className="btn btn-common mx-auto d-block" id="submit" type="submit">Send
                                                     Message
                                                 </button>
                                                 <div id="msgSubmit" className="h3 text-center hidden"></div>

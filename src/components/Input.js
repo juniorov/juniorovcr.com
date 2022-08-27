@@ -8,7 +8,7 @@ const Input = ({parentClass, type, id, placeholder, errorMessage}) => {
                     id={id}
                     name={id}
                     placeholder={placeholder}
-                    required
+
                     data-error={errorMessage}
                 />
                 <div className="help-block with-errors"></div>

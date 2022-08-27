@@ -52,10 +52,10 @@ const About = () => {
                                     }
                                 </ul>
                             </div>
-                            <a href="../docs/CV-JuniorOV.pdf" className="btn btn-common" download>
+                            <a href="../docs/CV-JuniorOV.pdf" className="btn btn-common d-block mx-auto" download>
                                 <i className="icon-paper-clip"></i> Download Resume
                             </a>
-                            <a href="#contact" className="btn btn-danger"><i className="icon-speech"></i> Contact Me</a>
+                            <a href="#contact" className="btn btn-danger d-block mx-auto"><i className="icon-speech"></i> Contact Me</a>
                         </div>
                     </div>
                 </div>
