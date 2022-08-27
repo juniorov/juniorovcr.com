@@ -233,27 +233,24 @@ button:focus{
   }
 }
 /* ScrollToTop */
-a.back-to-top{
+.back-to-top{
   position: fixed;
   bottom: 18px;
   right: 15px;
-  text-decoration: none;
+  border: none;
   i {
-  	display: block;
-	  font-size: 22px;
-	  width: 40px;
-	  height: 40px;
-	  line-height: 40px;
-	  color: #fff;
-      background: $preset;
-	  border-radius: 2px;
-	  text-align: center;
-	  transition: all 0.2s ease-in-out;
-	  -moz-transition: all 0.2s ease-in-out;
-	  -webkit-transition: all 0.2s ease-in-out;
-	  -o-transition: all 0.2s ease-in-out;
-	  @include icon-shadow;
-	}
+    display: block;
+    font-size: 22px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    color: #fff;
+    background: $preset;
+    border-radius: 2px;
+    text-align: center;
+    transition: all 0.2s ease-in-out;
+    @include icon-shadow;
+  }
 
   &:hover , &:focus {
       text-decoration: none;

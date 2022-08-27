@@ -45,7 +45,7 @@ function App() {
       <Hobbies />
       <Contact />
       <Footer />
-      <a href="#" className={isHide ? 'back-to-top d-none' : 'back-to-top d-block' } onClick={handleBackTop}><i className="icon-arrow-up"></i></a>
+      <button className={isHide ? 'back-to-top d-none' : 'back-to-top d-block' } onClick={handleBackTop}><i className="icon-arrow-up"></i></button>
     </div>
   );
 }
