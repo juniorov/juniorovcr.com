@@ -48,6 +48,7 @@ const Portfolio = () => {
             image: "git.png", keys: "backend", link:"https://git-scm.com/"
         },
     ];
+
     const handleControl = (e) => {
 
         if(e.target.localName === 'button') {
@@ -90,10 +91,12 @@ const Portfolio = () => {
                             }
                         </div>
                     </div>
-                    <div id="portfolio" className="row wrap-portfolio">
-                        {cards.map((card, index) => (
-                            <PortfolioCard key={index} image={card.image} link={card.link} keys={card.keys} />
-                        ))}
+                    <div className="col-12">
+                        <div id="portfolio" className="row wrap-portfolio">
+                            {cards.map((card, index) => (
+                                <PortfolioCard key={index} image={card.image} link={card.link} keys={card.keys} />
+                            ))}
+                        </div>
                     </div>
                 </div>
             </div>

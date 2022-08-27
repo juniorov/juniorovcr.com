@@ -27,12 +27,12 @@ const Resume = () => {
         {
             position: "Full-stack Developer - Hangar",
             years: "Jan 2016 - Mar 2019",
-            content: ["I had to create some systems with Laravel.", "Consume Rest API from Podio Platform."]
+            content: ["I have been migrating some sites to PHP and updating copy for others that were in .NET"]
         },
         {
             position: "Web Programmer - Double Digit",
             years: "Nov 2013 - Jan 2016",
-            content: ["I was in charge of developing WordPress sites creating custom themes and using some plugins as ACF"]
+            content: ["I was in charge of creating some API with Laravel to be consumed from IOS and Android Apps \nI consume SOAP API and integrated with WordPress E-commerce"]
         },
     ];
 

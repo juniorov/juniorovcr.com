@@ -1,9 +1,9 @@
-const ServicesItem = ({title, text}) => {
+const ServicesItem = ({icon, title, text}) => {
     return (
         <div className="col-md-6 col-lg-3 col-xs-12">
             <div className="services-item">
                 <div className="icon">
-                    <i className="icon-grid"></i>
+                    <i className={icon}></i>
                 </div>
                 <div className="services-content">
                     <h3>{title}</h3>

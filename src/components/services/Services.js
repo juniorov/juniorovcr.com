@@ -4,20 +4,24 @@ import ServicesItem from "./ServicesItem";
 const Services = () => {
     const services = [
         {
+            icon: "icon-grid",
             title: "Front-end Development",
-            text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse condi.",
+            text: "Create responsive websites, applications, web apps, etc. With modern technologies as HTML5, CSS3, React JS, Javascript",
         },
         {
+            icon: "icon-layers",
             title: "Back-end Development",
-            text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse condi."
+            text: "I can help you with the development of your business APIs, E-commerce, Websites, Online Payments, WordPress, and Woocommerce."
         },
         {
-            title: "Business Branding",
-            text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse condi."
+            icon: "icon-docs",
+            title: "Databases",
+            text: "I can develop relational databases, Cloud databases, NoSQL databases, Object-oriented databases, etc"
         },
         {
+            icon: "icon-support",
             title: "Consultancy",
-            text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse condi."
+            text: "I can help with the maintenance of your website or application, optimizing images, code, etc"
         }
     ]
     return (
@@ -27,7 +31,7 @@ const Services = () => {
                 <div className="row">
                     {
                         services.map((data, index) => (
-                            <ServicesItem key={index} title={data.title} text={data.text} />
+                            <ServicesItem key={index} icon={data.icon} title={data.title} text={data.text} />
                         ))
                     }
                 </div>

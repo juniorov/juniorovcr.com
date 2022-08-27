@@ -4,7 +4,7 @@ const Hobbies = () => {
     const hobbies = [
         { name: "Soccer", icon: "far fa-futbol" },
         { name: "Hiking", icon: "fas fa-hiking" },
-        { name: "Bike", icon: "fas fa-film" },
+        { name: "Bike", icon: "fas fa-biking" },
         { name: "Movies", icon: "fas fa-film" },
     ];
     return (
