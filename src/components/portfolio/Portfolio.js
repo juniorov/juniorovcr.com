@@ -49,7 +49,7 @@ const Portfolio = () => {
         },
     ];
     const handleControl = (e) => {
-        
+
         if(e.target.localName === 'button') {
             resetFilter();
             const btns = document.querySelectorAll('.controls .filter');
