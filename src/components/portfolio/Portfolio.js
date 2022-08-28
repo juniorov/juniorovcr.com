@@ -94,7 +94,7 @@ const Portfolio = () => {
                     <div className="col-12">
                         <div id="portfolio" className="row wrap-portfolio">
                             {cards.map((card, index) => (
-                                <PortfolioCard key={index} image={card.image} link={card.link} keys={card.keys} />
+                                <PortfolioCard key={index} {...card} />
                             ))}
                         </div>
                     </div>

@@ -20,7 +20,7 @@ const Hobbies = () => {
                 <div className="row">
                     {
                         hobbies.map((data, index) => (
-                            <CardHobbie hobbie={data.name} icon={data.icon} key={index}  />
+                            <CardHobbie {...data} key={index}  />
                         ))
                     }
                 </div>

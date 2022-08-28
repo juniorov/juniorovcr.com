@@ -31,7 +31,7 @@ const Services = () => {
                 <div className="row">
                     {
                         services.map((data, index) => (
-                            <ServicesItem key={index} icon={data.icon} title={data.title} text={data.text} />
+                            <ServicesItem key={index} {...data} />
                         ))
                     }
                 </div>
