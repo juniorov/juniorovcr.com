@@ -1,9 +1,9 @@
-const PortfolioCard = ({image, keys, link}) => {
+const PortfolioCard = ({image, keys, link, alt}) => {
     return (
         <div className={"col-sm-6 col-md-4 mix all "+keys}>
             <div className="portfolio-item">
                 <div className="shot-item">
-                    <img src={require(`../../images/gallery/${image}`)} alt=""/>
+                    <img src={require(`../../images/gallery/${image}`)} alt={alt}/>
                     <div className="overlay">
                         <div className="icons">
                             <a className="link" href={link}>

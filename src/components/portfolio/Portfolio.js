@@ -21,31 +21,31 @@ const Portfolio = () => {
     ]
     const cards = [
         {
-            image: "laravel.png", keys: "backend frameworks", link:"https://laravel.com/"
+            image: "laravel.png", keys: "backend frameworks", link:"https://laravel.com/", alt: "Laravel"
         },
         {
-            image: "wordpress.png", keys: "frontend frameworks", link:"https://wordpress.com/"
+            image: "wordpress.png", keys: "frontend frameworks", link:"https://wordpress.com/", alt: "Wordpress"
         },
         {
-            image: "php.png", keys: "backend", link:"https://php.net/"
+            image: "php.png", keys: "backend", link:"https://php.net/", alt: "PHP"
         },
         {
-            image: "html.png", keys: "frontend", link:"https://www.w3schools.com/html/"
+            image: "html.png", keys: "frontend", link:"https://www.w3schools.com/html/", alt: "HTML"
         },
         {
-            image: "mysql.png", keys: "backend", link:"https://mysql.com/"
+            image: "mysql.png", keys: "backend", link:"https://mysql.com/", alt: "MySQL"
         },
         {
-            image: "javascript.png", keys: "backend frontend", link:"https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+            image: "javascript.png", keys: "backend frontend", link:"https://developer.mozilla.org/en-US/docs/Web/JavaScript", alt: "Javascript"
         },
         {
-            image: "codeigniter.png", keys: "backend frameworks", link:"https://codeigniter.com/"
+            image: "codeigniter.png", keys: "backend frameworks", link:"https://codeigniter.com/", alt: "Codeigniter"
         },
         {
-            image: "css.png", keys: "frontend", link:"https://developer.mozilla.org/en-US/docs/Web/CSS"
+            image: "css.png", keys: "frontend", link:"https://developer.mozilla.org/en-US/docs/Web/CSS", alt: "CSS"
         },
         {
-            image: "git.png", keys: "backend", link:"https://git-scm.com/"
+            image: "git.png", keys: "backend", link:"https://git-scm.com/", alt: "GITHUB"
         },
     ];
 

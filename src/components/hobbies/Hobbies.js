@@ -13,7 +13,7 @@ const Hobbies = () => {
                 <div className="row">
                     <div className="container">
                         <div className="col-xs-12">
-                            <h1 className="text-center text-white">Hobbies</h1>
+                            <h2 className="text-center text-white">Hobbies</h2>
                         </div>
                     </div>
                 </div>

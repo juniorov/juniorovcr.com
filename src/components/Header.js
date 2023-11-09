@@ -57,7 +57,7 @@ const Header = () => {
                         <div className="col-md-12 col-sm-12 text-center">
                             <div className="contents">
                                 <h5 className="script-font wow fadeInUp">Hi This is</h5>
-                                <h2 className="head-title wow fadeInUp">Junior Obando</h2>
+                                <h1 className="head-title wow fadeInUp">Junior Obando</h1>
                                 <p className="script-font wow fadeInUp">Software Engineer</p>
                                 <SocialMediaLinks  extraClass="wow fadeInUp" />
                                 <div className="header-button wow fadeInUp"><a href="#contact" className="btn btn-common">Get in Touch</a>
