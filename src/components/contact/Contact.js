@@ -40,6 +40,7 @@ const Contact = () => {
                             <div className="contact-block">
                                 <h2>Contact Form</h2>
                                 <form id="contactForm" onSubmit={handleSubmit} ref={form}>
+                                    <Input parentClass="" type="hidden" id="website" value="https://juniorovcr.com" />
                                     <div className="row">
                                         <Input parentClass="col-md-6" type="text" placeholder="Name" id="name" errorMessage="Please enter your name" />
                                         <Input parentClass="col-md-6" type="email" placeholder="Email" id="email" errorMessage="Please enter your email" />
@@ -51,8 +52,8 @@ const Contact = () => {
                                                 <div className="help-block with-errors"></div>
                                             </div>
                                             <div className="submit-button">
-                                                <button className="btn btn-common mx-auto d-block" id="submit" type="submit">Send
-                                                    Message
+                                                <button className="btn btn-common mx-auto d-block" id="submit" type="submit">
+                                                Send Message
                                                 </button>
                                                 <div id="msgSubmit" className="h3 text-center hidden"></div>
                                                 <div className="clearfix"></div>
