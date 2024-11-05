@@ -47,9 +47,7 @@ const Contact = () => {
 
                                         <div className="col-md-12">
                                             <div className="form-group">
-                                                <textarea className="form-control" id="message" name="message"
-                                                          placeholder="Your Message" rows="5"
-                                                          data-error="Write your message"></textarea>
+                                                <textarea className="form-control" id="message" name="message" placeholder="Your Message" rows="5" data-error="Write your message"></textarea>
                                                 <div className="help-block with-errors"></div>
                                             </div>
                                             <div className="submit-button">
